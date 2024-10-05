@@ -9,7 +9,7 @@ body{
     color:white;
 }
 .header{
-    position:fixed;
+    
     top:0;
     left:0;
     width:100%;
@@ -119,44 +119,102 @@ button {
     opacity: 1;
     right: 0;
   }
-  .btm{
-    position:absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-.btm a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width:40px;
-    height:40px;
-    background: transparent;
-    border: 2px solid blue;
-    border-radius: 50%;
-    font-size: 20px;
-    color: beige;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-.btm a:hover{
-    color:blue;
-}
-.btm a::before{
-    content: '';
-    position:absolute;
-    top:0;
-    left:0;
-    width:0;
-    height:100%;
-    background:beige;
-    z-index: -1;
-    transition: .5s;
-}
-.btm a:hover::before{
-    width: 100%;
-}
+  
+.abou{
+    border:2px solid black;
+    animation: bor 3s infinite;
+    padding :100px;
+    text-align:center;
+    margin:10%;
+    margin-top: 10px;
+    h1{
+      margin-bottom: 35px;
+      text-decoration: underline;
+    }
+    p{
+      font-size:27px;
+    }
+    }
+    .h3{
+        font-size: 40px;
+        text-align:center;
+    }
+    .proj{
+        display:flex;
+      border-color: black;
+      
+        }
+.proj img{
+        display:block;
+        width:300px;
+        height:450px;
+        
+        }
+        .proj .it1 {
+            border-color: black;
+            left: 350px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .proj .it1:hover {
+            transform: scale(1.1);
+        }
+        .proj .it2{
+            left: 400px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .proj .it2:hover{
+            transform: scale(1.1);
+        }
+ .proj .it1, .it2{
+        position:relative;
+        margin:40px;
+        height:450px;
+        width: 300px;
+        overflow:hidden;
+        }
+        .into{
+            
+        }
+     .btm{
+            position:absolute;
+            bottom: 40px;
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+            top: 1900px;
+        }
+        .btm a{
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:40px;
+            height:40px;
+            background: transparent;
+            border: 2px solid blue;
+            border-radius: 50%;
+            font-size: 20px;
+            color: beige;
+            text-decoration: none;
+            z-index: 1;
+            overflow: hidden;
+            transition: .5s;
+        }
+        .btm a:hover{
+            color:blue;
+        }
+        .btm a::before{
+            content: '';
+            position:absolute;
+            top:0;
+            left:0;
+            width:0;
+            height:100%;
+            background:beige;
+            z-index: -1;
+            transition: .5s;
+        }
+        .btm a:hover::before{
+            width: 100%;
+        }
