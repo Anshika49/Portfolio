@@ -24,6 +24,7 @@ body{
     color:white;
     text-decoration: none;
     font-weight: 600;
+    margin-top: 5px;
 }
 .navbar a{
     font-size: 18px;
@@ -63,3 +64,44 @@ body{
     font-size: 16px;
     margin-top:15px;
 }
+.home-content .s{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    border-radius: 8px;
+    background-color: #1796bd;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+    padding: 15px;
+    width: 180px;
+    transition: all 0.5s;
+     margin-top:30px;
+  }
+  
+  .s span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .s span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 10px;
+    transition: 0.5s;
+  }
+  
+  .s:hover span {
+    padding-right: 25px;
+  }
+  
+  .s:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
